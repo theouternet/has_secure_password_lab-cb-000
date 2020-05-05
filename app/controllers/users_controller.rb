@@ -8,7 +8,7 @@ class UsersController < ApplicationController
    @user = User.new(user_params)
    if @user.valid?
      @user.save
-     @user
+     session[:user_id] = @user.id
   end
  
   private
