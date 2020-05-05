@@ -10,6 +10,9 @@ class UsersController < ApplicationController
      @user.save
      session[:user_id] = @user.id
 redirect_to homepage_path
+
+ else
+      redirect_to new_users_path
   end
 end 
  
