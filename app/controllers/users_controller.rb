@@ -13,6 +13,12 @@ redirect_to homepage_path
   end
 end 
  
+ def homepage
+    @user = User.find_by(id: session[:user_id])
+  end
+
+
+ 
   private
  
   def user_params
