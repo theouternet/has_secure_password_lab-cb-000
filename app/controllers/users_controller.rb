@@ -11,6 +11,7 @@ class UsersController < ApplicationController
      session[:user_id] = @user.id
 redirect_to homepage_path
   end
+end 
  
   private
  
