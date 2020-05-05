@@ -9,6 +9,7 @@ class UsersController < ApplicationController
    if @user.valid?
      @user.save
      session[:user_id] = @user.id
+redirect_to homepage_path
   end
  
   private
